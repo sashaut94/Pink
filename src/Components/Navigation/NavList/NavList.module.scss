@@ -1,0 +1,75 @@
+@import '../../../variables';
+
+.NavList {
+  @media(min-width: $desktop-width) {
+    margin-top: 12px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @media(min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.item {
+  @media(min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 79px;
+    }
+  }
+}
+
+.opened {
+  box-shadow: 0 1px 0 #000000,
+  inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  &:not(:last-child) {
+    margin-bottom: 1px;
+  }
+}
+
+.link {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 15.5px 20px;
+  transition: .3s ease-in-out;
+
+  @media(min-width: $desktop-width) {
+    font-weight: normal;
+    border-bottom: 2px solid transparent;
+    padding: 0 0 12px;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+
+  &:hover {
+    color: #D22856;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3)
+  }
+}
+
+.active {
+  cursor: default;
+
+  &:hover {
+    color: white;
+  }
+
+  @media(min-width: $desktop-width) {
+    border-color: white;
+  }
+}

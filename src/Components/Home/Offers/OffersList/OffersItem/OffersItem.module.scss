@@ -1,0 +1,101 @@
+@import '../../../../../variables';
+
+.OffersItem {
+  padding: 0;
+  margin: 0 auto 30px;
+
+  @media(min-width: $tablet-width) {
+    width: 50%;
+    text-align: left;
+    padding: 0 20px 0 0;
+    margin: 0 0 34px 0;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: calc((940px - 40px) / 3);
+    text-align: center;
+    padding: 413px 10px 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: top 56px center;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 88px;
+      width: 185px;
+      height: 277px;
+      border: 8px solid transparent;
+      transition: .3s;
+    }
+
+    &:hover {
+      &:after {
+        border-color: #252527;
+      }
+    }
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+
+  @media(min-width: $desktop-width) {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 22px;
+  }
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  margin: 12px 0 0;
+
+  @media(min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.offer-1 {
+  @media(min-width: $desktop-width) {
+    background-image: url(../../../../../images/offer1-desktop.png);
+
+    &:after {
+      left: 54px;
+    }
+  }
+}
+
+.offer-2 {
+  @media(min-width: $desktop-width) {
+    background-image: url(../../../../../images/offer2-desktop.png);
+
+    &:after {
+      left: 57px;
+    }
+  }
+}
+
+.offer-3 {
+  margin: 0;
+  @media(min-width: $desktop-width) {
+    background-image: url(../../../../../images/offer3-desktop.png);
+
+    &:after {
+      left: 60px;
+    }
+  }
+}
+

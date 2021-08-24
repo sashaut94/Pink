@@ -1,0 +1,45 @@
+@import '../../../variables';
+
+.ReviewsSliderList {
+  padding: 41px 20px 52px;
+  overflow: hidden;
+
+  @media(min-width: $tablet-width) {
+    padding: 100px 20px 36px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 182px 20px 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='79' height='63' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.147 6.973L30.839 0C28.389 1.481 0 12.059 0 39.13 0 46.27.341 63 18.98 63c11.236 0 13.998-10.153 13.998-13.422 0-21.727-21.47-13.994-21.47-13.994 0-17.807 19.883-26.518 23.639-28.611zM79 6.973L74.732 0c-2.43 1.481-30.849 12.059-30.849 39.13 0 7.14.342 23.87 18.99 23.87C74.1 63 76.86 52.847 76.86 49.578c0-21.727-21.47-13.994-21.47-13.994C55.391 17.777 75.315 9.066 79 6.973z' fill='%23EFEFEF'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: top 70px center;
+  }
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+
+  @media(min-width: $desktop-width) {
+    padding: 0 10px;
+  }
+}
+
+.dots {
+  position: absolute;
+  bottom: -44px;
+  left: 50%;
+  transform: translateX(-54%);
+  display: flex;
+  align-items: center;
+
+  @media(min-width: $tablet-width) {
+    bottom: -34px;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
+}

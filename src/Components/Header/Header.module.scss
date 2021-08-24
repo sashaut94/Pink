@@ -1,0 +1,24 @@
+@import '../../variables';
+
+.Header {
+  background-image: url(../../images/back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+
+  @media(min-width: $tablet-width) {
+    background-image: url(../../images/back-tablet.jpg);
+  }
+
+  @media(min-width: $desktop-width) {
+    background-image: url(../../images/back-desktop.jpg);
+  }
+}
+
+.opened {
+  background-position: top 266px center;
+
+  @media(min-width: $tablet-width) {
+    background-position: top 257px center;
+  }
+}

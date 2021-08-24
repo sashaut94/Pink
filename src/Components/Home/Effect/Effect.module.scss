@@ -1,0 +1,107 @@
+@import '../../../variables';
+
+.HomeEffect {
+  background-color: white;
+
+  @media(min-width: $desktop-width) {
+    background-color: #F2F2F2;
+  }
+}
+
+.wrapper {
+  padding: 95px 20px 22px;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("data:image/svg+xml,%3Csvg width='238' height='276' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M211.314 81.628l4.273-4.287c6.165-6.175 7.291-15.148 2.499-19.94-4.792-4.79-13.752-3.678-19.91 2.496l-4.305 4.311a118.265 118.265 0 00-59.684-25.578v-7.67h6.118c8.714 0 15.846-6.966 15.846-15.476 0-8.51-7.132-15.484-15.846-15.484H97.721c-8.714 0-15.846 6.966-15.846 15.484S89.008 30.96 97.722 30.96h6.118v7.67a118.935 118.935 0 00-69.052 34A119.238 119.238 0 00.946 141.836a119.313 119.313 0 0015.518 75.474 119.047 119.047 0 0058.389 50.187 118.839 118.839 0 0076.847 3.916 118.988 118.988 0 0063.175-43.991 119.28 119.28 0 0023.089-73.506 119.27 119.27 0 00-26.65-72.287zm-92.301 163.319a87.901 87.901 0 01-48.884-14.85 88.092 88.092 0 01-32.407-39.546 88.23 88.23 0 01-5.006-50.911A88.153 88.153 0 0156.8 94.524a87.95 87.95 0 0145.053-24.113 87.87 87.87 0 0150.838 5.017 88.012 88.012 0 0139.486 32.457 88.197 88.197 0 0114.825 48.956 88.177 88.177 0 01-25.774 62.301 87.923 87.923 0 01-62.214 25.805z' fill='%23DEDEDE'/%3E%3C/svg%3E");
+  background-position: left 20px bottom;
+  background-repeat: no-repeat;
+
+  @media(min-width: $desktop-width) {
+    padding: 163px 10px 113px;
+    background-size: 298px 345px;
+    background-position: left 12px bottom 71px;
+  }
+
+  &:after {
+    content: '24';
+    position: absolute;
+    left: 38px;
+    bottom: 18px;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 163px;
+    color: #D22856;
+    border: 16px solid #D22856;
+    border-radius: 50%;
+    padding: 2px 30px 5px;
+
+    @media(min-width: $desktop-width) {
+      font-size: 120px;
+      left: 35px;
+      bottom: 92px;
+      padding: 27px 38px 28px;
+      border: 18px solid #D22856;
+    }
+  }
+}
+
+.inner {
+  width: 50%;
+  margin-left: auto;
+  text-align: left;
+
+  @media(min-width: $desktop-width) {
+    width: 61%;
+    padding-left: 3px;
+  }
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+
+  @media(min-width: $desktop-width) {
+    font-weight: bold;
+    line-height: 30px;
+  }
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  margin: 10px 0 10px;
+
+  @media(min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 26px 0 30px;
+  }
+}
+
+.link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #D22856;
+  transition: .3s;
+
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    color: rgba(#283645, 0.3);
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

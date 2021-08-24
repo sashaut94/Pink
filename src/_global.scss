@@ -1,0 +1,74 @@
+@import './variables';
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.from-tablet {
+  display: none;
+
+  @media(min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.desktop-only {
+  display: none;
+
+  @media(min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.mobile-tablet {
+  @media(min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.mobile-only {
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tablet-desktop {
+  display: none;
+  @media(min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.mobile-desktop {
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
+  @media(min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.tablet-only {
+  display: none;
+  @media(min-width: $tablet-width) {
+    display: block;
+  }
+  @media(min-width: $desktop-width) {
+    display: none;
+  }
+}

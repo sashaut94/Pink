@@ -1,0 +1,77 @@
+@import '../../../variables';
+
+.toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  display: block;
+  color: rgba(#283645, 0.3);
+
+  @media(min-width: $tablet-width) {
+    color: #D22856;
+    width: 24px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-right: 46px;
+    width: 48px;
+    height: 44px;
+  }
+}
+
+.active {
+  color: #D22856;
+}
+
+.img {
+  display: block;
+}
+
+.crop {
+  width: 44px;
+  height: 44px;
+
+  @media(min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.fill {
+  width: 48px;
+  height: 43px;
+
+  @media(min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.contrast {
+  width: 32px;
+  height: 32px;
+
+  @media(min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}

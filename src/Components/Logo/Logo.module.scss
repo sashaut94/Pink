@@ -1,0 +1,104 @@
+@import './src/variables';
+
+.Logo {
+  display: block;
+  cursor: auto;
+  transition: .3s ease-in-out;
+
+  &:not(.active) {
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.Logo--header {
+  width: 75px;
+  height: 23px;
+
+  @media(min-width: $tablet-width) {
+    width: 147px;
+    height: 40px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 13px;
+  }
+
+  .glasses, .part-of-glasses {
+    color: white;
+  }
+
+  .pink {
+    color: #fff;
+    transform: translate(-72px, -17px);
+
+    @media(min-width: $tablet-width) {
+      transform: translate(0, 0);
+    }
+  }
+
+  .stars {
+    color: #D22856;
+  }
+
+  &:not(.active) {
+    &:hover {
+      .pink, .glasses, .part-of-glasses {
+        color: #D22856;
+      }
+    }
+
+    &:active {
+      .pink, .glasses, .part-of-glasses {
+        color: #fff;
+      }
+    }
+  }
+
+}
+
+.Logo--footer {
+  width: 147px;
+  height: 40px;
+
+  .glasses, .part-of-glasses {
+    color: #D22856;
+  }
+
+  .pink {
+    color: #283645;
+  }
+
+  .stars {
+    color: #283645;
+  }
+
+  &:not(.active) {
+    &:hover {
+      .pink {
+        color: #D22856;
+      }
+    }
+
+    &:active {
+      .pink {
+        color: #283645;
+      }
+    }
+  }
+}
+
+.pink, .stars, .glasses, .part-of-glasses {
+  transition: .3s ease-in-out;
+}

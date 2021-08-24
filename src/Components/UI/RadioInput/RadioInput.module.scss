@@ -1,0 +1,70 @@
+@import '../../../variables';
+
+.RadioInput {
+  margin-bottom: 34px;
+
+  @media(min-width: $desktop-width) {
+    padding-left: 62px;
+    margin-bottom: 35px;
+  }
+}
+
+.input + .label {
+  display: inline-block;
+  padding: 5.5px 0 5.5px 70px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  position: relative;
+  font-weight: normal;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    &:before {
+      border-color: #283645;
+    }
+  }
+
+  &:active {
+    &:before {
+      border-color: #D22856;
+    }
+  }
+
+  @media(min-width: $tablet-width) {
+    padding-left: 59px;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 41px;
+    background: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+
+    @media(min-width: $tablet-width) {
+      left: -2px;
+    }
+  }
+}
+
+.input:checked + .label:after {
+  position: absolute;
+  content: '';
+  top: 13px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #D22856;
+
+  @media(min-width: $tablet-width) {
+    left: 11px;
+  }
+}

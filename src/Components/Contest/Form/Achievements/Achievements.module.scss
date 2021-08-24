@@ -1,0 +1,60 @@
+@import '../../../../variables';
+
+.Achievements {
+  background: #F2F2F2;
+  padding: 40px 20px 0;
+
+  @media(min-width: $tablet-width) {
+    order: 3;
+    background-color: #fff;
+    padding:30px 20px 0;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 100%;
+    padding: 13px 0;
+  }
+}
+
+.fieldset {
+  border: none;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 0;
+
+  @media(min-width: $tablet-width) {
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+    max-width: 960px;
+    padding: 5px 60px 7px;
+  }
+
+  @media(min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px 8px 12px 58px;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #D22856;
+  padding: 0;
+  max-width: 218px;
+  margin-bottom: 37px;
+  font-style: normal;
+  font-weight: normal;
+
+  @media(min-width: $tablet-width) {
+    max-width: 100%;
+    padding: 0 31px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-left: -25px;
+  }
+}

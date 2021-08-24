@@ -1,0 +1,60 @@
+@import '../../../../variables';
+
+.ReviewsSliderItem {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullName {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  margin: 0 0 13px 0;
+
+  @media(min-width: $tablet-width) {
+    order: 2;
+    font-size: 20px;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.text {
+  font-weight: normal;
+  font-size: 14px;
+  color: #283645;
+  line-height: 30px;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media(min-width: $tablet-width) {
+    max-width: 620px;
+    order: 1;
+    font-size: 18px;
+    margin-bottom: 36px;
+  }
+
+  @media(min-width: $desktop-width) {
+    max-width: 688px;
+    margin: 0 auto 37px;
+  }
+}
+
+.age-and-job {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+
+  @media(min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}

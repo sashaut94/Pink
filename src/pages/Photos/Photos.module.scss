@@ -1,0 +1,35 @@
+@import '../../variables';
+
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  margin: 0 auto;
+  max-width: 283px;
+  padding: 44px 20px 50px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 92px 20px 77px;
+    max-width: 490px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 90px 10px 88px;
+    max-width: 600px;
+  }
+}
+
+.gallery {
+  max-width: 980px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+}

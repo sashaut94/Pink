@@ -1,0 +1,101 @@
+@import '../../../variables';
+
+.RangeInput {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 35px;
+
+    @media(min-width: $tablet-width) {
+      margin-right: 0;
+    }
+  }
+
+  @media(min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 28px;
+    justify-content: normal;
+  }
+}
+
+.input {
+  width: 240px;
+  margin: 6px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media(min-width: $tablet-width) {
+    position: static;
+    transform: translateX(0);
+    width: 202px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::-webkit-slider-runnable-track {
+  background: #283645;
+  border: 0;
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+}
+
+.input::-webkit-slider-thumb {
+  margin-top: -6px;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+
+  &:active, &:focus {
+    background: #D22856;
+  }
+}
+
+.input:focus::-webkit-slider-runnable-track {
+  background: #2a3948;
+}
+
+.input::-moz-range-track {
+  background: #283645;
+  border: 0;
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+}
+
+.input::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:active, &:focus {
+    background: #D22856;
+  }
+}

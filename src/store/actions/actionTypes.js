@@ -1,0 +1,3 @@
+export const MENU_TOGGLE = 'MENU_TOGGLE'
+export const UPDATE_WIDTH = 'UPDATE_WIDTH'
+export const LIKE_COMMENT = 'LIKE_COMMENT'

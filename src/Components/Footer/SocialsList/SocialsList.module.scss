@@ -1,0 +1,15 @@
+@import '../../../variables';
+
+.SocialList {
+  display: flex;
+  justify-content: center;
+  margin: 39px 0;
+
+  @media(min-width: $tablet-width) {
+    margin: 0 0 0 -16px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin: 0 0 0 5px;
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../variables';
+@import '../../global';
+
+.Title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+
+  @media(min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.photos {
+  padding: 30.5px 0 77.5px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 67.5px 0 126.5px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 56.5px 0 90.5px;
+  }
+}
+
+.contest {
+  padding: 30.5px 0 43.5px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 23.5px 0 59.5px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 59.5px 0 87.5px;
+  }
+}
+
+.home {
+  padding: 25.5px 20px 314.5px;
+  line-height: 29px;
+  background-image: url(../../images/hand-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @media(min-width: $tablet-width) {
+    background-image: none;
+    padding: 0 10px 0 0;
+    width: 50%;
+    margin-bottom: 31px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 36px;
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 309px;
+  }
+}

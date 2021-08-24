@@ -1,0 +1,112 @@
+@import "../../../variables";
+
+.AddPhoto {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  margin: 0;
+  padding: 23px 20px 42px;
+  background-color: white;
+
+  @media(min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 44px 20px 70px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 5px 20px 70px;
+  }
+}
+
+.wrapper {
+  padding: 20px 20px 41px;
+  background-color: #F2F2F2;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 20px 54px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 54px 60px 57px 15px;
+    margin-bottom: 28px;
+  }
+}
+
+.imgWrapper {
+  margin: 0;
+
+  @media(min-width: $tablet-width) {
+    width: calc((100% - 20px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: calc(100% / 2);
+  }
+}
+
+.ranges {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 42px 35px 75px 20px;
+  margin: 0 auto;
+
+  @media(min-width: $tablet-width) {
+    flex-direction: column;
+    padding: 9px 0 41px 2px;
+    max-width: 100%;
+  }
+  @media(min-width: $desktop-width) {
+    padding: 0 0 44px 2px;
+    margin: 0;
+  }
+}
+
+.controls {
+
+  @media(min-width: $tablet-width) {
+    width: calc((100% - 20px) / 2);
+    padding: 2px 8px 0 37px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  @media(min-width: $desktop-width) {
+    max-width: 100%;
+    padding: 0 0 0 19px;
+    margin: -2px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2);
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 39px;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media(min-width: $desktop-width) {
+    flex-direction: row;
+    margin-top: auto;
+    justify-content: space-between;
+    padding-left: 4px;
+  }
+}
